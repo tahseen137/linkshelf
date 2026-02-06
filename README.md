@@ -2,46 +2,32 @@
 
 **Save links. Stay organized. Share collections.**
 
-A beautiful, modern bookmark manager built with Next.js 14, TypeScript, and Tailwind CSS.
+LinkShelf is a beautiful bookmark manager that fetches titles automatically, organizes your links into collections, and lets you share them with the world.
 
-## ✨ Features
+![Screenshot](screenshot.png)
 
-- 🚀 **Auto-Fetch Titles** - Just paste a URL and we automatically fetch the page title
-- 📁 **Smart Collections** - Organize links into collections with drag-and-drop support
-- 🌐 **Public Sharing** - Share collections publicly with beautiful read-only views
-- 🔍 **Fast Search** - Quickly find any link across all your collections
-- 🎨 **Beautiful Dark UI** - Glassmorphism design with teal/cyan accents
-- 💾 **Client-Side Storage** - Uses localStorage for MVP (no backend required)
+## Features
 
-## 🚀 Live Demo
+- ⚡ **Auto-Fetch Titles** — Just paste a URL, we fetch the page title
+- 📁 **Smart Collections** — Organize links into drag-and-drop collections
+- 🌐 **Share Publicly** — Make collections public and share beautiful link pages
+- 🔍 **Search** — Find any link instantly
+- 📱 **Responsive** — Works beautifully on all devices
 
-🔗 **Production:** https://linkshelf-2y4j13iny-tahseen-rahmans-projects-58bcf065.vercel.app
+## Tech Stack
 
-## 📦 Pages
-
-1. **Landing Page** (`/`) - Hero section with features and pricing
-2. **Dashboard** (`/dashboard`) - Main app interface for managing links and collections
-3. **Public Collection** (`/c/[id]`) - Beautiful public view of shared collections
-4. **API Routes** (`/api/links`, `/api/collections`) - Backend API endpoints
-
-## 🛠️ Tech Stack
-
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 14
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **Web Scraping:** Cheerio (for title fetching)
 - **Deployment:** Vercel
-- **Storage:** LocalStorage (MVP)
 
-## 📋 Pricing
-
-- **Free:** Up to 100 links, unlimited collections, public sharing
-- **Pro ($5/mo):** Unlimited links, unlimited collections, priority support
-
-## 🏗️ Local Development
+## Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/linkshelf.git
+cd linkshelf
+
 # Install dependencies
 npm install
 
@@ -50,40 +36,16 @@ npm run dev
 
 # Build for production
 npm run build
-
-# Start production server
-npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the app.
+## Deployment
 
-## 📂 Project Structure
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/linkshelf)
 
-```
-linkshelf/
-├── app/
-│   ├── page.tsx              # Landing page
-│   ├── dashboard/page.tsx    # Main dashboard
-│   ├── c/[id]/page.tsx       # Public collection view
-│   ├── api/
-│   │   ├── links/route.ts    # Links API endpoint
-│   │   └── collections/route.ts  # Collections API endpoint
-│   ├── layout.tsx            # Root layout
-│   └── globals.css           # Global styles
-├── types/
-│   └── index.ts              # TypeScript types
-└── public/                   # Static assets
-```
+## Live Demo
 
-## 🔗 Links
+🔗 [linkshelf.vercel.app](https://linkshelf-2y4j13iny-tahseen-rahmans-projects-58bcf065.vercel.app)
 
-- **GitHub:** https://github.com/tahseen137/linkshelf
-- **Vercel:** https://linkshelf-2y4j13iny-tahseen-rahmans-projects-58bcf065.vercel.app
+## License
 
-## 📝 License
-
-MIT License - feel free to use this project however you'd like!
-
----
-
-Built with ❤️ for organizing the web
+MIT
